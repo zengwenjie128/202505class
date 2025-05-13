@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
@@ -55,27 +57,40 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Camouflaged Object Detection with Feature Decomposition and
               Edge Reconstruction</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                  <a href="https://ieeexplore.ieee.org/author/37087046639" target="_blank">Chunming He</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/37086839906" target="_blank">Kai Li</a><sup>2</sup><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/37086072514" target="_blank">Yachao Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/37089975117" target="_blank">Longxiang Tang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/37086571190" target="_blank">Yulun Zhang</a><sup>3</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/37089984462" target="_blank">Zhenhua Guo</a><sup>4</sup>,</span>
+                <span class="author-block">
+                  <a href="https://ieeexplore.ieee.org/author/38667875300" target="_blank">Xiu Li</a><sup>1</sup><sup>*</sup>
+                </span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>Shenzhen International Graduate School, Tsinghua University, <br>
+                  <sup>2</sup>NEC Laboratories America, <sup>3</sup>ETH Zürich, <sup>4</sup>Tianyi Traffic Technology <br>
+                  {chunminghe19990224, li.gml.kai, lloong.x, yulun100, cszguo}@gmail.com <br>
+                  yachaozhang@stu.xmu.edu.cn, li.xiu@sz.tsinghua.edu.cn
+                </span>
+                <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding author.</small></span>
+              </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/He_Camouflaged_Object_Detection_With_Feature_Decomposition_and_Edge_Reconstruction_CVPR_2023_paper.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -86,7 +101,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static\pdfs\He_Camouflaged_Object_Detection_CVPR_2023_supplemental.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -97,7 +112,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/ChunmingHe/FEDER" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -107,7 +122,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -115,7 +130,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -129,13 +144,17 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/0.png" width="600" alt="image_0"/> 
+      </div>
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
-      </video>
+      </video> -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Results of SegMaR and our method under the intrinsic similarity (IS) and edge disruption (ED) challenges. Our
+        method better localizes the objects and produces clearer edges.
       </h2>
     </div>
   </div>
@@ -150,7 +169,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Camouflaged object detection (COD) aims to address the tough issue of identifying camouflaged objects visually blended into the surrounding backgrounds. COD is a challenging task due to the intrinsic similarity of camouflaged objects with the background, as well as their ambiguous boundaries. Existing approaches to this problem have developed various techniques to mimic the human visual system. Albeit effective in many cases, these methods still struggle when camouflaged objects are so deceptive to the vision system. In this paper, we propose the FEature Decomposition and Edge Reconstruction (FEDER) model for COD. The FEDER model addresses the intrinsic similarity of foreground and background by decomposing the features into different frequency bands using learnable wavelets. It then focuses on the most informative bands to mine subtle cues that differentiate foreground and background. To achieve this, a frequency attention module and a guidance-based feature aggregation module are developed. To combat the ambiguous boundary problem, we propose to learn an auxiliary edge reconstruction task alongside the COD task. We design an ordinary differential equation-inspired edge reconstruction module that generates exact edges. By learning the auxiliary task in conjunction with the COD task, the FEDER model can generate precise prediction maps with accurate object boundaries. Experiments show that our FEDER model significantly outperforms state-of-the-art methods with cheaper computational and memory costs. The code will be available at 
+              <a href="https://github.com/ChunmingHe/FEDER" target="_blank" style="color: #007BFF; ">
+                https://github.com/ChunmingHe/FEDER
+              </a>.
           </p>
         </div>
       </div>
@@ -160,62 +182,43 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <!-- Paper video. -->
+      <h2 class="title is-3">camouflaged feature encoder</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/CFE.png" width="150" alt="image_cfe"/> 
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <p>
+        Camouflaged object detection (COD) differs from existing object detection tasks. It presents new challenges in mining subtle discriminative features under complex camouflage strategies. Early techniques used hand-crafted operators for COD, which were only applicable to camouflaged scenarios with simple backgrounds. Recent research has leveraged the huge capacity of deep learning to detect camouflaged objects in a learning manner. Inspired by the hunting process of predators, SINet designed a bio-inspired network to gradually search and locate the camouflaged object. PFNet proposed the position module and focus module to imitate human identification with the distraction mining strategy. By simulating human behaviors in understanding complex scenarios, SegMaR integrated segment, magnify and reiterate in a coarse-to-fine manner using the multi-stage strategy. However, these COD solutions mainly focus on mimicking biovision systems, which can be easily confused by complex camouflaged strategies and struggle to excavate the subtle discriminative features, thus failing to handle the IS and ED challenges.
+        <br><br>
+        Unlike these human perception-oriented techniques, we first propose to address the COD task from a decomposition perspective by decomposing the extracted features into different frequency bands with learnable wavelets and filtering out the most informative bands to excavate those inconspicuous discriminative features, thus remedying the human visual deficiency and solving the IS challenge. To handle the ED challenge, we propose learning an auxiliary edge reconstruction task along with the COD task to facilitate the generation of precise segmentation results with clear object boundaries.
+        <br><br>
+        Deep wavelet decomposition is an effective tool to decompose image/feature into various frequency components and has gained immense popularity in many domains, such as image restoration and style transfer. To handle the IS challenge, we introduce deep wavelet decomposition into the COD task. Furthermore, to better accommodate the COD data, we employ the learnable wavelets for deep adaptive feature decomposition, whose coefficients are updated following AWD.
+        <br><br>
+        Following SINet V2 [4], the basic encoder \(E\) adopts ResNet50 [10]/Res2Net50 [7] as its backbone. Given an image \(I_c\) of size \(W \times H\), the basic encoder \(E\) generates a set of feature maps \(\{f_k\}_{k = 0}^4\) with the resolution of \(\frac{H}{2^{k + 1}} \times \frac{W}{2^{k + 1}}\). R-Net [6] is cascaded to transform \(\{f_k\}_{k = 1}^4\) into a more informative and compact output, i.e., a series of 64-channel feature maps \(\{f^r_k\}_{k = 1}^4\). Additionally, the last feature map \(f_4\) from the basic encoder \(E\) is further fed into an efficient atrous spatial pyramid pooling (e-ASPP) \(A_e\) [16] to enlarge the receptive field and fuse the multi-context information, resulting in \(d^s_5 = A_e(f_4)\), where \(d^s_5\) is a coarse segmentation result with the same spatial resolution as \(f_4\).
+      </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+      <h2 class="title is-3">Deep wavelet decomposition</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/DWD.png" width="850" alt="image_dwd"/> 
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Deep wavelet decomposition is an effective tool to decompose image/feature into
+various frequency components and has gained immense
+popularity in many domains, such as image restoration and style transfer. To handle the IS challenge, we introduce deep wavelet decomposition into the COD task. Furthermore, to better accommodate the COD data, we employ the learnable wavelets for deep adaptive feature decomposition, whose coefficients are updated following AWD.
+        </p>
       </div>
     </div>
   </div>
@@ -223,46 +226,115 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
+
+
+
+
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <!-- Paper video. -->
+      <h2 class="title is-3">GFA、HFA and LFA</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/GFA_HFA_LFA.png" width="950" alt="image_cfe"/> 
+      </div>
+      <h3 class="title is-4">high-frequency attention(HFA)</h3>
+      <p>
+        We design the HFA module to accentuate those texture-rich regions for subtle discriminative feature extraction. Following, we first apply a residual block for texture preservation, consisting of a \(3 \times 3\) convolution layer, batch normalization (BN), and ReLU. We then employ the joint attention module \(JA(\cdot)\), which includes spatial attention and channel attention, to highlight noteworthy parts in both spatial and channel domains. Therefore, given HF features \((f^r_k)_{HF}\), the HF attention map \(p^h_k\) is formulated as follows: 
+        \[
+        p^h_k = JA\left(ResB\left((f^r_k)_{HF}\right)\right), 
+        \]
+        where \(ResB(\cdot)\) denotes the residual block with BN.
+      </p>
+
+      <h3 class="title is-4">low-frequency attention(LFA)</h3>
+      <p>
+        Low-frequency components focus more on global information, such as color distribution and illumination, which inevitably leads to inevitably existing redundant components and slight perturbations. To handle those problems, we design a comprehensive normalization strategy to suppress the undesired artifacts and provide cleaner global information for attention calculation both at the instance level and channel dimension, which can highlight those abnormal regions from a global perspective. Specifically, this module takes the composed LF features \((f^r_k)_{LF}\) as the input and outputs 
+        \[
+        p^l_k = JA\left(PN\left(ResIN\left((f^r_k)_{LF}\right)\right)\right), 
+        \]
+        where \(ResIN(\cdot)\), \(PN(\cdot)\), and \(JA(\cdot)\) denote the instance normalization constrained residual block, positional normalization, and joint attention, respectively.
+      </p>
+
+
+      <h3 class="title is-4">Guidance-based Feature Aggregation(GFA)</h3>
+      <p>
+        we propose a guidance-based feature
+        aggregation (GFA) module to integrate the multi-scale decomposed features. Unlike existing heuristic-based feature
+        aggregation strategies simply using concatenation,
+        GFA is specifically designed to address the key issue of
+        COD, i.e., emphasizing the subtle discriminative features,
+        by promoting inter-feature information interaction.
+      </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
 
-
-
-
-
-<!-- Paper poster -->
 <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Experiments</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/experiment.png" width="1200" alt="image_experiment"/> 
+      </div>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/visual_comparisons.png" width="1200" alt="image_visual"/> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Performance</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/Performance.png" width="700" alt="image_per"/> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Ablation</h2>
+      <div class="is-centered" style="text-align: center;"> 
+        <img src="static/images/Ablation.png" width="1200" alt="image_ab"/> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Conclusion</h2>
+      <p>
+        To address the IS and ED challenges, in this paper, we
+        propose the FEDER model for COD. Specifically, we decompose the features into different frequency bands with
+        learnable wavelets and filter out the most informative bands
+        to excavate the subtle discriminative features with the HFA,
+        LFA, and GFA modules, thereby solving the IS challenge.
+        Besides, we propose to learn an auxiliary edge reconstruction task with our OER module to generate complete edges.
+        Learning this auxiliary task along with the COD task thus
+        facilitates the generation of precise segmentation results
+        with accurate object boundaries, thus mitigating the ED
+        challenge. Extensive experiments verify the superiority of
+        our FEDER model in comparison with other SOTAs.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -272,7 +344,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -280,7 +352,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @INPROCEEDINGS{10203727,
+        author={He, Chunming and Li, Kai and Zhang, Yachao and Tang, Longxiang and Zhang, Yulun and Guo, Zhenhua and Li, Xiu},
+        booktitle={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction}, 
+        year={2023},
+        volume={},
+        number={},
+        pages={22046-22055},
+        keywords={Computational modeling;Image edge detection;Object detection;Visual systems;Predictive models;Feature extraction;Mathematical models;Segmentation;grouping and shape analysis},
+        doi={10.1109/CVPR52729.2023.02111}}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -293,9 +376,8 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page presents a research project based on the paper "Camouflaged Object Detection with Feature Decomposition and
+            Edge Reconstruction".It is a particularly emphasized that this is a course assignment website for 《Computer Network and Multimedia Technology》and is only used for course learning and assignment submission.
           </p>
 
         </div>
